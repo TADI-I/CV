@@ -52,12 +52,57 @@
                 <th>
                    Programming 
                 </th>
-                <td><ul> <li>Java</li> <li>HTML</li> <li>CSS</li> <li><a href="http://"></a>JavaScript</li></ul><br>Click <a href="http://"></a>here for my GitHub Account </td>
+                <td><ul> <li><a href="https://github.com/TADI-I/Java.git">Java</a></li> <li><a href="https://github.com/TADI-I/HTML/tree/main/HTML/Radiology">HTML</a></li> <li>CSS</li> <li><a href="http://">JavaScript</a></li></ul><br>Click <a href="https://github.com/TADI-I">here</a> for my GitHub Account </td>
             </tr>
 
             <th><u>Certificates</u></th>
 
         </table>
-    </section>    
+    </section>   
+    <Section id="s2">
+        <h1 id="timee"></h1>
+    </Section> 
 </body>
+<script>
+    function time(){
+
+       
+        y = new Date().getTime();
+
+
+        const seconds = 1000 ;
+        const miniutes = seconds * 60 ;
+        const hours = miniutes * 60 ;
+        const days = hours * 24 ;
+        const weeks = days * 7 ;
+        const Months = weeks * 4;
+
+        var mon = Math.floor(y / Months);
+        var week = Math.floor((y % Months) / weeks );
+        var day = Math.floor((y % weeks) / days);
+        var hour = Math.floor((y % days ) / hours);
+        var min = Math.floor((y % hours) / miniutes);
+        var sec = Math.floor((y % miniutes) / seconds);
+       // document.getElementById("DisTime").innerHTML = Date();
+
+        document.getElementById("timee").innerHTML = mon + " Months " + week + " Weeks " + day + " days "+ hour + " Hours "+ min + " Mins "+ sec + " Seconds ";
+        console.log(week);
+ /*
+        day = theZero(day);
+        hour = theZero(hour);
+        min = theZero(min);
+        sec = theZero(sec);
+
+       
+        document.getElementById("week").innerHTML = week;
+        document.getElementById("day").innerHTML = day;
+        document.getElementById("hour").innerHTML = hour;
+        document.getElementById("min").innerHTML = min;
+        document.getElementById("sec").innerHTML = sec;
+
+*/
+        setInterval(clock, 1000);
+
+    }
+</script>
 </html>

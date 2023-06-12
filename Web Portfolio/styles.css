@@ -1,8 +1,18 @@
+html{
+    background-color: black;
+    color: snow;
+}
+
+body{
+    color: black;
+}
+
 header{
     text-align: center;
     font-family: monospace;
     font-size: 20px;
     font-weight: bolder;
+    color: snow;
 }
 
 #s1{
